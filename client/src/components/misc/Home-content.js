@@ -28,7 +28,7 @@ const HomeContent = () => (
         <h6 className="mb-3">
           <a
             rel="noopener noreferrer"
-            href="http://localhost:3000/admin-home"
+            href="/admin-home"
           >
             <i className="fas fa-link mr-2" />
             Modo administrador
@@ -47,10 +47,10 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.mongodb.com/cloud/atlas"
+            href="/posts"
           >
             <i className="fas fa-link mr-2" />
-            MongoDB
+            Posteos
           </a>
         </h6>
         <p>
@@ -65,7 +65,7 @@ const HomeContent = () => (
         <h6 className="mb-3">
           <a
             rel="noopener noreferrer"
-            href="http://localhost:3000/profile"
+            href="/profile"
           >
             <i className="fas fa-link mr-2" />
             Sección perfil
