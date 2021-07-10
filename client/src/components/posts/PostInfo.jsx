@@ -49,7 +49,7 @@ export default function PostInfo(props) {
               </Modal.Title>
             </Modal.Header>
 
-            <Modal.Body>
+            <Modal.Body className="body-modal-info">
               <p>{post.content}</p>
             </Modal.Body>
           </div>

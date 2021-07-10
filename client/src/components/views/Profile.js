@@ -9,13 +9,13 @@ const Profile = () => {
   return (
     <div>
       <div className="row px-5">
-        <div className= "mb-3 d-flex justify-content-center">
+        <div className= "mb-3 justify-content-center profile-box">
           <img
             src={picture}
             alt="Profile"
-            className="rounded-circle mb-2 mb-md-0 mx-4"
+            className="rounded-circle"
           />
-          <div className="text-center text-md">
+          <div className="text-center text-md profile-div">
             <h2>{name}</h2>
             <p className="lead text-muted">{email}</p>
           </div>
