@@ -3,17 +3,24 @@ const mongoose = require("mongoose");
 const router = require("./routes/index");
 const cors = require("cors");
 const helmet = require("helmet");
-const path = require("path")
-const { clientOrigins, serverPort, mongoAtlasPassword } = require("./config/env.dev");
+const path = require("path");
+const {
+  clientOrigins,
+  serverPort,
+  mongoAtlasPassword,
+} = require("./config/env.dev");
 
 const app = express();
 
-const MONGODB_URI =
-  `mongodb+srv://Blog-app-db:${mongoAtlasPassword}@cluster0.iofkv.mongodb.net/Blog-app-db?retryWrites=true&w=majority`;
+const MONGODB_URI = `mongodb+srv://Blog-app-db:${mongoAtlasPassword}@cluster0.iofkv.mongodb.net/Blog-app-db?retryWrites=true&w=majority`;
 
 const PORT = process.env.PORT || serverPort;
 
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 app.use(cors({ origin: clientOrigins }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
