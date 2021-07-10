@@ -1,6 +1,6 @@
-# Admin-MERN-app
+# Blog-MERN-app
 
-Aplicación para simplificar la adminstración de pequeños negocios y emprendimientos.
+Aplicación que simula un Blog.
 
 ## Table of Contents
 
